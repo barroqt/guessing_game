@@ -1,6 +1,8 @@
 use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+// Could have used nested paths: use std::{cmp::Ordering, io};
+// instead of calling std twice
 
 // Step 1 : Read the input
 // Step 2 : Add RNG for mystery number
