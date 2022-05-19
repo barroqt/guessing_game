@@ -26,7 +26,7 @@ fn main() {
         .read_line(&mut guess) // Type io::Result => Ok or Err
         .expect("Failed to read line"); // takes the return value from "Ok" and returns it (number of bytes in what the user entered into standard input.)
 
-        let guess: u32 = guess.trim().parse(){
+        let guess: u32 = match guess.trim().parse(){
             Ok(num) => num,
             Err(_) => continue,
         };
